@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
+/*======================== Logo Configuration =========================*/
+#LOGO {
+    height: 31px;
+    width: 240px;
+    margin-top: 13px;
+    margin-left: 33px;
+}
+
+/*======================= Fading Configuration ==========================*/
+.fade-in {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn{
+  0% { opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*=================== Hyperlink style and colours. ======================*/
+a:link {
+	text-decoration: none;
+    background-color: transparent;
+    color: lightseagreen;
+}
+
+a:visited {
+	text-decoration: none;
+    background-color: transparent;
+    color: cadetblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: blue;
+}
+
+a:active {
+    text-decoration: underline;
+    background-color: transparent;
+    color: yellow;
+}
+
+a.special:link {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+a.special:visited {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+a.special:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: grey;
+}
+
+a.special:active {
+    text-decoration: none;
+    background-color: transparent;
+    color: yellow;
+}
+
+/*================= Fixed Menubar configuration. =================*/
+ul.menubar {
+    font-family: barrio;
+    background-color: lightseagreen;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+li.pages {
+    float: right;
+    display: block;
+    color: white;
+    padding: 14px 16px; /* was: 20px */
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/*====================== Main web page layout ======================*/
+footer {
+    background-color: lightseagreen;
+    font-size: 12px;
+    font-family: "Courier New"; /*was: Palatino*/
+    text-align: center;
+    color: white;
+    padding: 22px;
+    margin: 0px;
+    clear: left;
+}
+
+h1 {
+    background-color: lightseagreen;
+    font-size: 14px;
+    font-family: "Palatino";
+    letter-spacing: 2px;
+    text-align: right;
+    color: white;
+    padding: 28px;
+    margin: 0px;
+}
+
+/* Keeps all margins at 0 for web page size. */
+body {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+/* Wrapper for entire webpage layout. */
+div.container {
+    color: grey;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+	
+/* Change float to change Navigation Bar's side. */
+nav {
+    float: left;
+    max-width: 300px;
+    margin-top: 60px;
+	padding: none;
+}
+
+nav ul {
+    font-size: 13px;
+    font-family: "Courier New";
+    text-align: center;
+    text-indent: 0px;
+    max-height: 0px;
+    list-style-type: none;
+    padding: 4px;
+    margin: 16px;
+}
+
+nav ul a {
+	text-decoration: none;
+    text-indent: 0px;
+}
+
+/* Main webpage viewing (feature photo and navigation bar).  */
+article {
+    border-left: 0.1 white;
+    max-height: 660px;                   /* Changes height of the image and nav bar. original= 650px*/
+    overflow: hidden;
+    padding: none;                       /* Change padding if image is too far to the left. */
+    margin-left: 200px;
+}
